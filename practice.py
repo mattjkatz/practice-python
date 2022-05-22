@@ -21,14 +21,29 @@
 # print(largestNum([5, 67, 89, 34, 12, 96, 6]))
 
 
-# Print an array reversed
+# # Print an array reversed
 
-def reverseList(ar):
-  ar_reversed = []
-  i = len(ar) - 1
-  while i >= 0:
-    ar_reversed.append(ar[i])
-    i -= 1
-  return ar_reversed
+# def reverseList(ar):
+#   ar_reversed = []
+#   i = len(ar) - 1
+#   while i >= 0:
+#     ar_reversed.append(ar[i])
+#     i -= 1
+#   return ar_reversed
 
-print(reverseList([2, 5, 3, 8, 11]))
+# print(reverseList([2, 5, 3, 8, 11]))
+
+# print the first 100 digits of the fibbonaci sequence
+
+def fibbonaci():
+  a = 0
+  b = 1
+  print(a)
+  print(b)
+  for i in range(1, 100):
+    c = a + b
+    print(c)
+    a = b
+    b = c
+
+fibbonaci()
