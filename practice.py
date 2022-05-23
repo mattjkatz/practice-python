@@ -33,17 +33,34 @@
 
 # print(reverseList([2, 5, 3, 8, 11]))
 
-# print the first 100 digits of the fibbonaci sequence
 
-def fibbonaci():
-  a = 0
-  b = 1
-  print(a)
-  print(b)
-  for i in range(1, 100):
-    c = a + b
-    print(c)
-    a = b
-    b = c
+# # print the first 100 digits of the fibbonaci sequence
 
-fibbonaci()
+# def fibbonaci():
+#   a = 0
+#   b = 1
+#   print(a)
+#   print(b)
+#   for i in range(1, 100):
+#     c = a + b
+#     print(c)
+#     a = b
+#     b = c
+
+# fibbonaci()
+
+
+# Remove duplicates from an array
+
+def removeDuplicates(ar):
+  compAr = []
+  for i in ar:
+    duplicate = False
+    for j in compAr:
+      if (i == j):
+        duplicate = True
+    if (duplicate == False):
+      compAr.append(i)
+  return compAr
+
+print(removeDuplicates([2, 5, 7, 3, 5, 89, 3, 1, 5]))
