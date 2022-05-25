@@ -50,17 +50,17 @@
 # fibbonaci()
 
 
-# Remove duplicates from an array
+# # Remove duplicates from an array
 
-def removeDuplicates(ar):
-  compAr = []
-  for i in ar:
-    duplicate = False
-    for j in compAr:
-      if (i == j):
-        duplicate = True
-    if (duplicate == False):
-      compAr.append(i)
-  return compAr
+# def removeDuplicates(ar):
+#   compAr = []
+#   for i in ar:
+#     duplicate = False
+#     for j in compAr:
+#       if (i == j):
+#         duplicate = True
+#     if (duplicate == False):
+#       compAr.append(i)
+#   return compAr
 
-print(removeDuplicates([2, 5, 7, 3, 5, 89, 3, 1, 5]))
+# print(removeDuplicates([2, 5, 7, 3, 5, 89, 3, 1, 5]))
