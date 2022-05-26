@@ -64,3 +64,20 @@
 #   return compAr
 
 # print(removeDuplicates([2, 5, 7, 3, 5, 89, 3, 1, 5]))
+
+
+# Find the two largest numbers
+
+def twoLargestNum(ar):
+  lg = ar[0]
+  second_lg = lg
+  for i in ar:
+    if (i > lg):
+      second_lg = lg
+      lg = i
+    elif (i > second_lg):
+      second_lg = i
+  print(lg)
+  print(second_lg)
+
+twoLargestNum([2, 5, 23, 67, 8, 9, 1, 4, 34])
