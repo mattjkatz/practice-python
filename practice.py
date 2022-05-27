@@ -87,6 +87,8 @@ def numAddCommas(int):
   new_int = []
   if (int_split > 3):
     i = int_split - 1
+    for i in list(int):
+      new_int.append(list(int)[i])
     # while i >= 0:
     #   if (i)
     print(new_int)
