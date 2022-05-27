@@ -92,7 +92,7 @@ def numAddCommas(int):
       if (i % 3 == 0 and i != 0):
         new_int.append(",")
       i -= 1
-    print(new_int)
+    print(''.join(new_int))
   else:
     print(int)
 
