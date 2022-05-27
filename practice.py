@@ -83,14 +83,15 @@
 # twoLargestNum([2, 5, 23, 67, 8, 9, 1, 4, 34])
 
 def numAddCommas(int):
-  int_split = len(list(str(int)))
+  int_split = list(str(int))
   new_int = []
-  if (int_split > 3):
-    i = int_split - 1
-    for i in list(int):
-      new_int.append(list(int)[i])
-    # while i >= 0:
-    #   if (i)
+  if (len(int_split) > 3):
+    i = len(int_split) - 1
+    for j in list(str(int)):
+      new_int.append(int_split[i])
+      if (i % 3 == 0 and i != 0):
+        new_int.append(",")
+      i -= 1
     print(new_int)
   else:
     print(int)
