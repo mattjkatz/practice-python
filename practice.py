@@ -21,15 +21,15 @@
 # print(largestNum([5, 67, 89, 34, 12, 96, 6]))
 
 
-# # Print an array reversed
+# Print an array reversed
 
-# def reverseList(ar):
-#   ar_reversed = []
-#   i = len(ar) - 1
-#   while i >= 0:
-#     ar_reversed.append(ar[i])
-#     i -= 1
-#   return ar_reversed
+def reverseList(ar):
+  ar_reversed = []
+  i = len(ar) - 1
+  while i >= 0:
+    ar_reversed.append(ar[i])
+    i -= 1
+  return ar_reversed
 
 # print(reverseList([2, 5, 3, 8, 11]))
 
@@ -83,7 +83,7 @@
 # twoLargestNum([2, 5, 23, 67, 8, 9, 1, 4, 34])
 
 def numAddCommas(int):
-  int_split = list(str(int))
+  int_split = reverseList(list(str(int)))
   new_int = []
   if (len(int_split) > 3):
     i = len(int_split) - 1
@@ -96,4 +96,4 @@ def numAddCommas(int):
   else:
     print(int)
 
-numAddCommas(1212)
+numAddCommas(5000/3)
