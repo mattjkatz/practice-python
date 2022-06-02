@@ -100,3 +100,6 @@ def numAddCommas(int):
     print(int)
 
 # numAddCommas(5000/3)
+
+
+# add a gets.chomp function
