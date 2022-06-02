@@ -102,4 +102,8 @@ def numAddCommas(int):
 # numAddCommas(5000/3)
 
 
-# add a gets.chomp function
+# bubble sort
+
+def bubbleSort(ar):
+  ar_sorted = []
+  i = 0
