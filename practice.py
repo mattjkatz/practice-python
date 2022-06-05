@@ -125,4 +125,15 @@ def bubbleSort(ar):
 
 # starting at the first posistion, append the number to a new array, then skip forward that many spaces
 
+def skips(ar):
+  i = 0
+  ar_new = []
+  while i < len(ar):
+    if (type(ar[i]) == int):
+      ar_new.append(ar[i])
+      i += ar[i]
+    else:
+      return None
+  return ar_new
 
+print(skips([d, 1, 3, 4, 4, 2, 4, 5, 5, 5, 5, 5, 6, 2, 2, 2, 2, 2, 2, 3, 3, 3, 1, 1]))
