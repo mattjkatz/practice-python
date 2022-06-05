@@ -121,3 +121,8 @@ def bubbleSort(ar):
 
 
 # print(bubbleSort([45, 234, 56, 77, 12, 78]))
+
+
+# starting at the first posistion, append the number to a new array, then skip forward that many spaces
+
+
