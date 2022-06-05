@@ -105,22 +105,19 @@ def numAddCommas(int):
 # bubble sort
 
 def bubbleSort(ar):
-  ar_sorted = []
   i = 0
   j = 0
   temp = None
   while j < len(ar):
-    while i < len(ar) - len(ar_sorted):
+    while i < len(ar) - (j + 1):
       if (ar[i] < ar[i + 1]):
         temp = ar[i]
         ar[i] = ar[i + 1]
         ar[i + 1] = temp
       i += 1
+    i = 0
     j += 1
-    ar_sorted.append(ar[len(ar) - j])
+  return ar
 
 
-print(bubbleSort([45, 234, 56, 77, 12, 78]))
-
-
-
+# print(bubbleSort([45, 234, 56, 77, 12, 78]))
